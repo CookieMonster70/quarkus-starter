@@ -27,10 +27,10 @@ jobs:
     - name: Docker login to Container-Registry
       uses: docker/login-action@v1
       with:
-        registry: ${{ env.REGISTRY }}
+        registry: ghcr.io/BCC2021-Team-JEE-to-MP-Quarkus-etc
         username: ${{ github.actor }}
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build, Tag & Push Dockerfile
       run: |
         docker build -t quarkus-starter:dev -f ./src/main/docker/Dockerfile.native-distroless .
-        # docker push ghcr.io/OWNER/IMAGE_NAME:latest
+        docker push ghcr.io/BCC2021-Team-JEE-to-MP-Quarkus-etc/quarkus-starter:dev
