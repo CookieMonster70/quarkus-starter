@@ -32,5 +32,5 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     - name: Build, Tag & Push Dockerfile
       run: |
-        docker build -t quarkus-starter:dev -f ./src/main/docker/Dockerfile.native-distroless .
+        docker build -t luechtdiode/quarkus-starter:dev -f ./src/main/docker/Dockerfile.native-distroless .
         docker push ghcr.io/luechtdiode/quarkus-starter:dev
