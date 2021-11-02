@@ -20,3 +20,4 @@
 
 - https://quarkus.io/guides/hibernate-orm-panache
 - https://quarkus.io/guides/resteasy-reactive
+- https://www.morling.dev/blog/quarkus-and-testcontainers/
