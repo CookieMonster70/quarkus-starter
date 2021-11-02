@@ -8,7 +8,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "book")
 public class Book extends PanacheEntity {
-	public long id;
+	public Long id;
 	public String title;
 	public String author;
 
@@ -18,4 +18,5 @@ public class Book extends PanacheEntity {
 		book.author = author;
 		book.persist();
 	}
+
 }
