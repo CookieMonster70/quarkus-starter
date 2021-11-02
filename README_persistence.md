@@ -18,6 +18,10 @@
 
 ## Further Information
 
+- https://quarkus.io/guides/security-jpa
 - https://quarkus.io/guides/hibernate-orm-panache
 - https://quarkus.io/guides/resteasy-reactive
+- https://quarkus.io/guides/rest-json
 - https://www.morling.dev/blog/quarkus-and-testcontainers/
+- https://quarkus.io/guides/config-reference
+- 
