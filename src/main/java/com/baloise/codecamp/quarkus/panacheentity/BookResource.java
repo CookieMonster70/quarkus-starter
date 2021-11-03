@@ -1,4 +1,4 @@
-package com.baloise.codecamp.quarkus;
+package com.baloise.codecamp.quarkus.panacheentity;
 
 import javax.inject.Inject;
 import javax.ws.rs.GET;
@@ -16,7 +16,8 @@ public class BookResource {
 
 	@GET
 	public List<Book> list() {
-		return bookService.list();
+		List<Book> list = bookService.list();
+		return list;
 	}
 
 	@GET

@@ -1,4 +1,4 @@
-package com.baloise.codecamp.quarkus;
+package com.baloise.codecamp.quarkus.panacheentity;
 
 import javax.enterprise.context.ApplicationScoped;
 import java.util.List;

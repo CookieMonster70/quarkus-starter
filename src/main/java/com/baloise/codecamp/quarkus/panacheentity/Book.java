@@ -1,4 +1,4 @@
-package com.baloise.codecamp.quarkus;
+package com.baloise.codecamp.quarkus.panacheentity;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 

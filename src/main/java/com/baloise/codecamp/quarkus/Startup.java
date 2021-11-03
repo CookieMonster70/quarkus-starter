@@ -1,5 +1,6 @@
 package com.baloise.codecamp.quarkus;
 
+import com.baloise.codecamp.quarkus.panacheentity.Book;
 import io.quarkus.runtime.StartupEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

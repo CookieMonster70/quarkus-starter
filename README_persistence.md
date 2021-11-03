@@ -24,4 +24,4 @@
 - https://quarkus.io/guides/rest-json
 - https://www.morling.dev/blog/quarkus-and-testcontainers/
 - https://quarkus.io/guides/config-reference
-- 
+- https://quarkus.io/guides/hibernate-orm
