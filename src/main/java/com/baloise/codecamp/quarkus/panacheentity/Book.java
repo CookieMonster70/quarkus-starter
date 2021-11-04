@@ -1,13 +1,14 @@
 package com.baloise.codecamp.quarkus.panacheentity;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "book")
-public class Book extends PanacheEntity {
+public class Book extends PanacheEntityBase {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long id;
 	public String title;
 	public String author;
