@@ -8,22 +8,22 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
 
-@Path("/jpabooks")
+@Path("/jpaauthors")
 @Produces(MediaType.APPLICATION_JSON)
-public class JpaBookResource {
+public class JpaAuthorResource {
 	@Inject
-	JpaBookService jpaBookService;
+	JpaAuthorService jpaAuthorService;
 
 	@GET
-	public List<JpaBook> list() {
-		List<JpaBook> list = jpaBookService.list();
+	public List<JpaAuthor> list() {
+		List<JpaAuthor> list = jpaAuthorService.list();
 		return list;
 	}
 
 	@GET
-	@Path("{id}")
-	public JpaBook findById(@PathParam("id") Long id) {
-		return jpaBookService.findById(id);
+	@Path("{name}")
+	public JpaAuthor findById(@PathParam("name") String name) {
+		return jpaAuthorService.findByName(name);
 	}
 
 }

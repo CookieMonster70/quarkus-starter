@@ -6,12 +6,12 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "book")
-public class JpaBook {
+@Table(name = "author")
+public class JpaAuthor {
 	@Id
 	@GeneratedValue
 	public Long id;
-	public String title;
-	public String author;
+	public String name;
+	public String surname;
 
 }
