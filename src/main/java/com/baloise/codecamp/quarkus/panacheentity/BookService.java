@@ -1,16 +1,18 @@
 package com.baloise.codecamp.quarkus.panacheentity;
 
+import io.smallrye.mutiny.Uni;
+
 import javax.enterprise.context.ApplicationScoped;
 import java.util.List;
 
 @ApplicationScoped
 public class BookService {
 
-	public List<Book> list() {
+	public Uni<List<Book>> list() {
 		return Book.listAll();
 	}
 
-	public Book findById(Long id) {
+	public Uni<Book> findById(Long id) {
 		return Book.findById(id);
 	}
 

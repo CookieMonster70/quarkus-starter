@@ -1,6 +1,6 @@
 package com.baloise.codecamp.quarkus.panacheentity;
 
-import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
+import io.quarkus.hibernate.reactive.panache.PanacheEntityBase;
 
 import javax.persistence.*;
 

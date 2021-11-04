@@ -1,5 +1,7 @@
 package com.baloise.codecamp.quarkus.panacheentity;
 
+import io.smallrye.mutiny.Uni;
+
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -15,14 +17,13 @@ public class BookResource {
 	BookService bookService;
 
 	@GET
-	public List<Book> list() {
-		List<Book> list = bookService.list();
-		return list;
+	public Uni<List<Book>> list() {
+		return bookService.list();
 	}
 
 	@GET
 	@Path("{id}")
-	public Book findById(@PathParam("id") Long id) {
+	public Uni<Book> findById(@PathParam("id") Long id) {
 		return bookService.findById(id);
 	}
 
