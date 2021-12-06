@@ -22,10 +22,9 @@ public class Startup {
 
     @Transactional
     public void loadInitialData(@Observes StartupEvent evt) {
-        LOGGER.info("Loading Initial Data (Books and Authors");
+        LOGGER.info("Loading Initial Data (Books and Authors)");
 
         // reset and load all books:
-        Book.deleteAll();
         Book.add("Java for Beginners", "Java Guru");
         Book.add("Angular for Beginners", "Angular Guru");
         Book.add("title", "author");
