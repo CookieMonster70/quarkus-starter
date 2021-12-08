@@ -8,7 +8,7 @@ import javax.ws.rs.core.MediaType;
 
 @Path("/hello")
 @RequestScoped
-public class GreetingResource {
+public class GreetingResource { // dummy
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
